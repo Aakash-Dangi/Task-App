@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(userRouter);
 app.use(user_LoginRouter);
 
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 4000
 
 // Connecting mongoose to server
 mongoose.connect("mongodb://localhost:27017/task-manager-api", { useNewUrlParser: true }).catch((error) => { console.log(`Server Error ${error}`); })
